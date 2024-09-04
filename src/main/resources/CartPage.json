@@ -1,0 +1,4 @@
+{
+  "cartProducts" : ".cartSection h3",
+  "checkoutBtn" : "//button[text()='Checkout']"
+}

@@ -1,0 +1,7 @@
+{
+  "products": ".mb-3",
+  "productName" : "b",
+  "addToCartBtn" : ".card-body button:last-of-type",
+  "productAddedToaster" : "#toast-container",
+  "cartIcon" : "[routerlink*='cart']"
+}

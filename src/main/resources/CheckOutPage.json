@@ -1,0 +1,6 @@
+{
+  "selectCountry" : "[placeholder='Select Country']",
+  "countryName" : "//button[@type='button'][2]",
+  "placeOrderBtn" : ".action__submit",
+  "orderPageTitle" : ".hero-primary"
+}

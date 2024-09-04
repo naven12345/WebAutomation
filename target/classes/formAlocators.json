@@ -1,0 +1,8 @@
+{
+  "firstName" : "firstName",
+  "lastName" : "lastName",
+  "email" : "userEmail",
+  "gender" : "//input[@id='gender-radio-1']",
+  "number" : "userNumber",
+  "formPage" : "//h1[text()='Practice Form']"
+}
