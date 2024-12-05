@@ -32,5 +32,6 @@ public class BrokenLinks {
                 System.out.println(url + " - " + httpURLConnection.getResponseMessage() + "is a broken link");
             }
         }
+        driver.quit();
     }
 }

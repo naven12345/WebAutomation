@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-04T22:49:04 IST" name="All Test Suite" finished-at="2024-09-04T22:49:17 IST" duration-ms="12785">
+  <suite started-at="2024-11-19T22:36:19 IST" name="All Test Suite" finished-at="2024-11-19T22:37:14 IST" duration-ms="54848">
     <groups>
     </groups>
-    <test started-at="2024-09-04T22:49:04 IST" name="D:/Automation Practice/SeleniumConcepts" finished-at="2024-09-04T22:49:17 IST" duration-ms="12785">
-      <class name="example.EndToEndFlow">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:example.EndToEndFlow@2f40e5db]" started-at="2024-09-04T22:49:04 IST" name="setUp" finished-at="2024-09-04T22:49:12 IST" duration-ms="7801" status="PASS">
+    <test started-at="2024-11-19T22:36:19 IST" name="chrome test" finished-at="2024-11-19T22:36:48 IST" duration-ms="29217">
+      <class name="example.MultiBrowser">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:example.MultiBrowser@3ce1e309]" started-at="2024-11-19T22:36:19 IST" name="setUp" finished-at="2024-11-19T22:36:25 IST" duration-ms="5858" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:example.EndToEndFlow@2f40e5db]" started-at="2024-09-04T22:49:04 IST" name="setUp" finished-at="2024-09-04T22:49:10 IST" duration-ms="5793" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:example.MultiBrowser@3ce1e309]" started-at="2024-11-19T22:36:19 IST" name="setUp" finished-at="2024-11-19T22:36:25 IST" duration-ms="5428" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,23 +39,235 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginToApplication()[pri:0, instance:example.EndToEndFlow@2f40e5db]" started-at="2024-09-04T22:49:10 IST" name="loginToApplication" description="Login to the application with user credentials" finished-at="2024-09-04T22:49:10 IST" duration-ms="267" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:example.MultiBrowser@3ce1e309]" started-at="2024-11-19T22:36:19 IST" name="setUp" finished-at="2024-11-19T22:36:25 IST" duration-ms="5363" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginToApplication -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:example.EndToEndFlow@2f40e5db]" started-at="2024-09-04T22:49:10 IST" name="tearDown" finished-at="2024-09-04T22:49:11 IST" duration-ms="141" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="scrollTillEle()[pri:0, instance:example.MultiBrowser@3ce1e309]" started-at="2024-11-19T22:36:25 IST" name="scrollTillEle" finished-at="2024-11-19T22:36:48 IST" duration-ms="23521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrollTillEle -->
+        <test-method signature="enterText()[pri:0, instance:example.MultiBrowser@3ce1e309]" started-at="2024-11-19T22:36:25 IST" name="enterText" finished-at="2024-11-19T22:36:27 IST" duration-ms="2145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterText -->
+        <test-method signature="clickJs()[pri:0, instance:example.MultiBrowser@3ce1e309]" started-at="2024-11-19T22:36:25 IST" name="clickJs" finished-at="2024-11-19T22:36:35 IST" duration-ms="9976" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".banner\-imag"}
+  (Session info: chrome=124.0.6367.91)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8ce6a505d792ab375bcddacfb582eb0e, findElement {using=class name, value=banner-imag}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.91, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\NAVEEN\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60656}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60656/devtoo..., se:cdpVersion: 124.0.6367.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ce6a505d792ab375bcddacfb582eb0e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".banner\-imag"}
+  (Session info: chrome=124.0.6367.91)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8ce6a505d792ab375bcddacfb582eb0e, findElement {using=class name, value=banner-imag}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.91, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\NAVEEN\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60656}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60656/devtoo..., se:cdpVersion: 124.0.6367.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ce6a505d792ab375bcddacfb582eb0e
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at example.MultiBrowser.clickJs(MultiBrowser.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickJs -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:example.MultiBrowser@3ce1e309]" started-at="2024-11-19T22:36:27 IST" name="tearDown" finished-at="2024-11-19T22:36:27 IST" duration-ms="252" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="loginAndAddProductToCart()[pri:0, instance:example.EndToEndFlow@2f40e5db]" started-at="2024-09-04T22:49:12 IST" name="loginAndAddProductToCart" description="Login to the application, add product to cart and verify the place the order" finished-at="2024-09-04T22:49:17 IST" duration-ms="4690" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginAndAddProductToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:example.EndToEndFlow@2f40e5db]" started-at="2024-09-04T22:49:17 IST" name="tearDown" finished-at="2024-09-04T22:49:17 IST" duration-ms="271" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:example.MultiBrowser@3ce1e309]" started-at="2024-11-19T22:36:35 IST" name="tearDown" finished-at="2024-11-19T22:36:35 IST" duration-ms="367" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- example.EndToEndFlow -->
-    </test> <!-- D:/Automation Practice/SeleniumConcepts -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:example.MultiBrowser@3ce1e309]" started-at="2024-11-19T22:36:48 IST" name="tearDown" finished-at="2024-11-19T22:36:48 IST" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- example.MultiBrowser -->
+    </test> <!-- chrome test -->
+    <test started-at="2024-11-19T22:36:48 IST" name="edge test" finished-at="2024-11-19T22:37:14 IST" duration-ms="25567">
+      <class name="example.MultiBrowser">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:example.MultiBrowser@4d5d943d]" started-at="2024-11-19T22:36:48 IST" name="setUp" finished-at="2024-11-19T22:36:51 IST" duration-ms="2494" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:example.MultiBrowser@4d5d943d]" started-at="2024-11-19T22:36:48 IST" name="setUp" finished-at="2024-11-19T22:36:53 IST" duration-ms="4065" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:example.MultiBrowser@4d5d943d]" started-at="2024-11-19T22:36:48 IST" name="setUp" finished-at="2024-11-19T22:36:51 IST" duration-ms="2462" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="clickJs()[pri:0, instance:example.MultiBrowser@4d5d943d]" started-at="2024-11-19T22:36:51 IST" name="clickJs" finished-at="2024-11-19T22:37:00 IST" duration-ms="9213" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".banner\-imag"}
+  (Session info: chrome=124.0.6367.91)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [973d010485b713e304a1e903550afbaa, findElement {using=class name, value=banner-imag}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.91, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\NAVEEN\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60801}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60801/devtoo..., se:cdpVersion: 124.0.6367.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 973d010485b713e304a1e903550afbaa]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".banner\-imag"}
+  (Session info: chrome=124.0.6367.91)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [973d010485b713e304a1e903550afbaa, findElement {using=class name, value=banner-imag}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.91, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\NAVEEN\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60801}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60801/devtoo..., se:cdpVersion: 124.0.6367.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 973d010485b713e304a1e903550afbaa
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at example.MultiBrowser.clickJs(MultiBrowser.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickJs -->
+        <test-method signature="scrollTillEle()[pri:0, instance:example.MultiBrowser@4d5d943d]" started-at="2024-11-19T22:36:51 IST" name="scrollTillEle" finished-at="2024-11-19T22:37:14 IST" duration-ms="22788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrollTillEle -->
+        <test-method signature="enterText()[pri:0, instance:example.MultiBrowser@4d5d943d]" started-at="2024-11-19T22:36:53 IST" name="enterText" finished-at="2024-11-19T22:36:55 IST" duration-ms="2469" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterText -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:example.MultiBrowser@4d5d943d]" started-at="2024-11-19T22:36:55 IST" name="tearDown" finished-at="2024-11-19T22:36:55 IST" duration-ms="245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:example.MultiBrowser@4d5d943d]" started-at="2024-11-19T22:37:00 IST" name="tearDown" finished-at="2024-11-19T22:37:00 IST" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:example.MultiBrowser@4d5d943d]" started-at="2024-11-19T22:37:14 IST" name="tearDown" finished-at="2024-11-19T22:37:14 IST" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- example.MultiBrowser -->
+    </test> <!-- edge test -->
   </suite> <!-- All Test Suite -->
 </testng-results>

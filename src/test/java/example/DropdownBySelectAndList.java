@@ -18,7 +18,7 @@ public class DropdownBySelectAndList {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 
-        /**Select the dropdown value using robot calss*/
+        /**Select the dropdown value using robot class*/
 
         /*driver.get("https://demoqa.com");
         WebElement ele = driver.findElement(By.xpath("//div[contains(@class,'top-card')]//child::h5[text()='Widgets']"));

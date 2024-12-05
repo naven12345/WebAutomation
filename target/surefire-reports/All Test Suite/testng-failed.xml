@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
-  <parameter name="browser" value="chrome"/>
-  <parameter name="runMode" value="local"/>
-  <listeners>
-    <listener class-name="listeners.ExtentListener"/>
-  </listeners>
-  <test thread-count="5" parallel="methods" name="D:/Automation Practice/SeleniumConcepts(failed)" verbose="0">
+  <test thread-count="5" parallel="methods" name="chrome test(failed)" verbose="0">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="runMode" value="local"/>
     <classes>
-      <class name="example.EndToEndFlow">
+      <class name="example.MultiBrowser">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="loginToApplication"/>
-          <include name="loginAndAddProductToCart"/>
+          <include name="clickJs"/>
         </methods>
-      </class> <!-- example.EndToEndFlow -->
+      </class> <!-- example.MultiBrowser -->
     </classes>
-  </test> <!-- D:/Automation Practice/SeleniumConcepts(failed) -->
+  </test> <!-- chrome test(failed) -->
+  <test thread-count="5" parallel="methods" name="edge test(failed)" verbose="0">
+    <parameter name="browser" value="edge"/>
+    <parameter name="runMode" value="local"/>
+    <classes>
+      <class name="example.MultiBrowser">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="clickJs"/>
+        </methods>
+      </class> <!-- example.MultiBrowser -->
+    </classes>
+  </test> <!-- edge test(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-All_Test_Suite" class="navigator-link">
-              <span class="suite-name border-passed">All Test Suite</span>
+              <span class="suite-name border-failed">All Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,12 +50,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-All_Test_Suite" class="navigator-link ">
-                    <span>D:\Automation Practice\SeleniumConcepts\endToendFlow.xml</span>
+                    <span>D:\Automation Practice\SeleniumConcepts\crossBrowser.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-All_Test_Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods failed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods failed suite-All_Test_Suite"> (show)</a> <!-- show-methods failed suite-All_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-All_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="example.MultiBrowser" class="method navigator-link" hash-for-method="clickJs">clickJs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="example.MultiBrowser" class="method navigator-link" hash-for-method="clickJs">clickJs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-All_Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,12 +122,22 @@
                     <div class="method-list-content passed suite-All_Test_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="example.EndToEndFlow" class="method navigator-link" hash-for-method="loginAndAddProductToCart">loginAndAddProductToCart</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="example.MultiBrowser" class="method navigator-link" hash-for-method="enterText">enterText</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="example.EndToEndFlow" class="method navigator-link" hash-for-method="loginToApplication">loginToApplication</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="example.MultiBrowser" class="method navigator-link" hash-for-method="enterText">enterText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="example.MultiBrowser" class="method navigator-link" hash-for-method="scrollTillEle">scrollTillEle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="example.MultiBrowser" class="method navigator-link" hash-for-method="scrollTillEle">scrollTillEle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-All_Test_Suite -->
@@ -123,28 +152,116 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-All_Test_Suite" class="panel All_Test_Suite">
-          <div class="suite-All_Test_Suite-class-passed">
+          <div class="suite-All_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">example.EndToEndFlow</span>
+              <img src="failed.png"/>
+              <span class="class-name">example.MultiBrowser</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginAndAddProductToCart">
-                  </a> <!-- loginAndAddProductToCart -->
-                  <span class="method-name">loginAndAddProductToCart</span>
-                  <em>
-(Login to the application, add product to cart and verify the place the order)                  </em>
+                  <a name="clickJs">
+                  </a> <!-- clickJs -->
+                  <span class="method-name">clickJs</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.banner\-imag&quot;}
+  (Session info: chrome=124.0.6367.91)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8ce6a505d792ab375bcddacfb582eb0e, findElement {using=class name, value=banner-imag}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.91, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\NAVEEN\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60656}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60656/devtoo..., se:cdpVersion: 124.0.6367.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ce6a505d792ab375bcddacfb582eb0e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at example.MultiBrowser.clickJs(MultiBrowser.java:33)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginToApplication">
-                  </a> <!-- loginToApplication -->
-                  <span class="method-name">loginToApplication</span>
-                  <em>
-(Login to the application with user credentials)                  </em>
+                  <a name="clickJs">
+                  </a> <!-- clickJs -->
+                  <span class="method-name">clickJs</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.banner\-imag&quot;}
+  (Session info: chrome=124.0.6367.91)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [973d010485b713e304a1e903550afbaa, findElement {using=class name, value=banner-imag}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.91, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: C:\Users\NAVEEN\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60801}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60801/devtoo..., se:cdpVersion: 124.0.6367.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 973d010485b713e304a1e903550afbaa
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at example.MultiBrowser.clickJs(MultiBrowser.java:33)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-failed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">example.MultiBrowser</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterText">
+                  </a> <!-- enterText -->
+                  <span class="method-name">enterText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterText">
+                  </a> <!-- enterText -->
+                  <span class="method-name">enterText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="scrollTillEle">
+                  </a> <!-- scrollTillEle -->
+                  <span class="method-name">scrollTillEle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="scrollTillEle">
+                  </a> <!-- scrollTillEle -->
+                  <span class="method-name">scrollTillEle</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -152,23 +269,27 @@
         </div> <!-- panel All_Test_Suite -->
         <div panel-name="test-xml-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Automation Practice\SeleniumConcepts\endToendFlow.xml</span>
+            <span class="header-content">D:\Automation Practice\SeleniumConcepts\crossBrowser.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;All Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-  &lt;parameter name=&quot;runMode&quot; value=&quot;local&quot;/&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;listeners.ExtentListener&quot;/&gt;
-  &lt;/listeners&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;D:/Automation Practice/SeleniumConcepts&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;methods&quot; name=&quot;chrome test&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;runMode&quot; value=&quot;local&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;example.EndToEndFlow&quot;/&gt;
+      &lt;class name=&quot;example.MultiBrowser&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- D:/Automation Practice/SeleniumConcepts --&gt;
+  &lt;/test&gt; &lt;!-- chrome test --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;methods&quot; name=&quot;edge test&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
+    &lt;parameter name=&quot;runMode&quot; value=&quot;local&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;example.MultiBrowser&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- edge test --&gt;
 &lt;/suite&gt; &lt;!-- All Test Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -180,7 +301,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">D:/Automation Practice/SeleniumConcepts (1 class)</span>
+                <span class="test-name">chrome test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">edge test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -206,20 +330,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginAndAddProductToCart')
-data.setCell(0, 2, 'example.EndToEndFlow')
-data.setCell(0, 3, 4690);
+data.setCell(0, 1, 'scrollTillEle')
+data.setCell(0, 2, 'example.MultiBrowser')
+data.setCell(0, 3, 23521);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'loginToApplication')
-data.setCell(1, 2, 'example.EndToEndFlow')
-data.setCell(1, 3, 267);
+data.setCell(1, 1, 'scrollTillEle')
+data.setCell(1, 2, 'example.MultiBrowser')
+data.setCell(1, 3, 22788);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'clickJs')
+data.setCell(2, 2, 'example.MultiBrowser')
+data.setCell(2, 3, 9976);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'clickJs')
+data.setCell(3, 2, 'example.MultiBrowser')
+data.setCell(3, 3, 9213);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'enterText')
+data.setCell(4, 2, 'example.MultiBrowser')
+data.setCell(4, 3, 2469);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'enterText')
+data.setCell(5, 2, 'example.MultiBrowser')
+data.setCell(5, 3, 2145);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-All_Test_Suite">
               </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
@@ -245,7 +385,11 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">example.EndToEndFlow</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">example.MultiBrowser</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, local)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome, local)</span>
                 <span class="method-start">0 ms</span>
@@ -255,20 +399,68 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginToApplication</span>
-                <span class="method-start">5795 ms</span>
+                <span class="method-name">scrollTillEle</span>
+                <span class="method-start">5364 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterText</span>
+                <span class="method-start">5428 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">clickJs</span>
+                <span class="method-start">5858 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">6065 ms</span>
+                <span class="method-start">7579 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">15852 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">28885 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, local)</span>
+                <span class="method-start">29239 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, local)</span>
+                <span class="method-start">29241 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, local)</span>
+                <span class="method-start">29245 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginAndAddProductToCart</span>
-                <span class="method-start">7801 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">clickJs</span>
+                <span class="method-start">31707 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">scrollTillEle</span>
+                <span class="method-start">31733 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterText</span>
+                <span class="method-start">33306 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">12491 ms</span>
+                <span class="method-start">35775 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">40924 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">54529 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
